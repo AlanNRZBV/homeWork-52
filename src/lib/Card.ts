@@ -1,4 +1,4 @@
-class Card {
+export class Card {
   rank: string;
   suit: string;
   symbol: string;
@@ -9,4 +9,4 @@ class Card {
   }
 }
 
-export default Card;
+
