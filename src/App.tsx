@@ -4,8 +4,7 @@ import CardDeck from './lib/CardDeck';
 
 function App() {
   const test = new CardDeck();
-  test.createDesk();
-  console.log(test.deck)
+  test.getCards(5);
 
   return (
     <div className="playingCards faceImages">
