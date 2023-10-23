@@ -39,7 +39,7 @@ class PokerHand {
         setCount++;
       } else if (pairCount > 1) {
         twoPairs = true;
-      } else if (checkResultRank[i] === 4) {
+      } else if (checkResultRank[i] > 3) {
         quadsCount++;
       }
 

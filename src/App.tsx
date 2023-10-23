@@ -12,7 +12,6 @@ function App() {
     const newDeck = new CardDeck();
     const newCards = newDeck.getCards(5);
     setCards(newCards);
-    console.log(cards);
   };
 
   const refreshHand = () => {
