@@ -1,4 +1,4 @@
-import {Card} from './Card';
+import { Card } from './Card';
 
 interface Suit {
   name: string;
@@ -39,8 +39,12 @@ class CardDeck {
     });
   }
 
-  getCard(): Card {
-    const rndNumber: number = Math.floor(Math.random() * 52);
+  getCard(): Card | undefined {
+    if (this.deck.length === 0) {
+      return undefined;
+    }
+
+    const rndNumber: number = Math.floor(Math.random() * this.deck.length);
     const removedCard: Card[] = this.deck.splice(rndNumber, 1);
     return removedCard[0];
   }
@@ -48,7 +52,7 @@ class CardDeck {
   getCards(howMany: number): Card[] {
     const cardsToHand: Card[] = [];
     for (let i = 0; i < howMany; i++) {
-      cardsToHand.push(this.getCard());
+      cardsToHand.push(<Card>this.getCard());
     }
     return cardsToHand;
   }

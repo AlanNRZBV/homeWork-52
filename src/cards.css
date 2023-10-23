@@ -7,6 +7,14 @@
  * @link     http://selfthinker.github.com/CSS-Playing-Cards/
  */
 
+
+/* CUSTOM STYLES*/
+
+.result {
+  display: block;
+}
+
+
 /* card itself
 ********************************************************************/
 

@@ -8,5 +8,3 @@ export class Card {
     this.symbol = symbol;
   }
 }
-
-
